@@ -24,9 +24,10 @@ nav a {
 .video {
     position: relative;
     padding-bottom: 52%;
-    padding-top: 30px;
+    padding-top: auto;
     height: 0;
     overflow: hidden;
+    position: center;
 }
 
 .video iframe,
@@ -74,6 +75,32 @@ header {
     background-color: #6dccaa;
     color: white;
     font-weight: bold;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 20px;
+}
+
+.socialm li {
+    list-style: none;
+    margin: 0 2px;
+    display: inline-block;
+    font-size: 20px;
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    border: 2px solid white;
+    transition: .5s;
+    text-align: center;
+    line-height: 42px;
+}
+
+li:hover {
+    color: #333;
+    border: 2px solid #333;
+    transition: .5s;
+    cursor: pointer;
 }
 
 ul {
@@ -208,13 +235,15 @@ span {
 
 .maps:hover {
     background-color: #f7c040;
+    transition: .5s;
+    color: white;
 }
 
 footer {
     background-color: #f0f0f0;
 }
 
-.columns2 {
+.columns {
     align-items: center;
     margin-top: 50px;
 }
@@ -264,4 +293,5 @@ input[type="submit"]:hover {
     color: #fff;
     background: #f7c040;
     border-color: #f7c040;
+    transition: .5s;
 }
