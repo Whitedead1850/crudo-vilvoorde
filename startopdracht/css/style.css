@@ -1,37 +1,93 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
+    letter-spacing: 0.2px;
     /*     background: lightgray;
  */
 }
 
 .hero {
-    background-color: #6DCCAA;
+    background-color: #6dccaa;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    /* padding: 30px; */
+}
+
+nav a {
+    padding: 20px 10px;
+}
+
+.video {
+    position: relative;
+    padding-bottom: 52%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video iframe,
+.video object,
+.video embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .container {
     width: 80vw;
     max-width: 1200px;
     margin: 0 auto;
-    border: 5px solid red;
+    /* padding: 30px; */
+    /* border: 5px solid red; */
+}
+
+.d-flex {
+    display: flex;
 }
 
 .video-container {
     flex-grow: 1;
 }
 
-.social-shit {
-    background-color: #6DCCAA;
+header {
+    margin-top: 1rem;
 }
 
-.d-flex {
-    display: flex;
+.text-aline-right {
+    text-align: right;
+}
+
+
+/* header nav a {
+    padding: 20px 40px;
+    margin-right: 1rem;
+    display: inline-block;
+} */
+
+.social-shit {
+    background-color: #6dccaa;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    padding-inline-start: 40px;
+}
+
+.hero img {
+    width: 103px;
+    height: 41px;
+}
+
+nav {
+    align-items: center;
+    height: 100px;
 }
 
 .justify-content {
@@ -43,19 +99,26 @@ body {
 }
 
 .three-columns>* {
-    flex: 1 1 calc(100%/3);
+    flex: 1 1 calc(100% / 3);
     text-align: center;
 }
 
 .right {
-    padding: 0 100px;
+    text-align: left;
+    margin-right: auto;
+    padding-left: 30px;
 }
 
 .left {
-    padding: 0 100px;
+    text-align: right;
+    margin-left: auto;
+    padding-right: 30px;
 }
 
-.passie {}
+.left,
+.right {
+    max-width: 475px;
+}
 
 section {
     padding: 4rem 0;
@@ -65,18 +128,140 @@ a:hover {
     color: red;
 }
 
-a {
+nav a {
     color: white;
     text-decoration: none;
     cursor: pointer;
+    padding: 10px;
 }
 
-img {
-    max-width: 100%;
+.eetcafe .img {
+    width: 100%;
+}
+
+.eetcafe {
+    background-color: #ffce4d;
+}
+
+.banaan {
+    background-color: #6dccaa;
+}
+
+.gember {
+    background-color: #ebcd9b;
+}
+
+.coaching1 {
+    background-color: #bedd90;
+}
+
+table {
+    width: 100%;
+}
+
+table>tr>td:nth-child(2) {
+    text-align: right;
+}
+
+table tr td {
+    padding: 1rem;
+    border-bottom: 5px dotted yellow;
+}
+
+
+/* img {
+    width: 180px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+} */
+
+hr {
+    display: inline-block;
+    width: 50px;
+    height: 2px;
+    margin: 20px 0;
+    background: #333;
+}
+
+.img-fluid {
+    width: 100%;
     height: auto;
 }
 
 span {
     font-weight: bold;
     padding: 3px;
+}
+
+.maps {
+    background-color: #f7f7f7;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.maps a {
+    padding-top: 5px;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.maps:hover {
+    background-color: #f7c040;
+}
+
+footer {
+    background-color: #f0f0f0;
+}
+
+.columns2 {
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+/* .video {
+    position: relative;
+    width: 100%;
+    top: 0;
+    height: auto;
+} */
+
+.bottom {
+    background-color: #e6e6e6;
+    padding: 20px;
+}
+
+.columns img {
+    width: 180px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+a.button,
+input[type="submit"] {
+    display: inline-block;
+    padding: 10px 16px;
+    font-family: "Montserrat", "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    color: inherit;
+    background: transparent;
+    border: 2px solid #333;
+    transition: all 0.2s ease-out;
+}
+
+a.button:hover,
+input[type="submit"]:hover {
+    color: #fff;
+    background: #f7c040;
+    border-color: #f7c040;
 }
